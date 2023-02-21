@@ -1,4 +1,6 @@
 import java.time.LocalDate;
+
+import br.com.dio.desafio.dominio.Conteudo;
 import br.com.dio.desafio.dominio.Curso;
 import br.com.dio.desafio.dominio.Mentoria;
 
@@ -13,6 +15,9 @@ public class Main {
         mentoria.setTitulo("CursoXXXXX");
         mentoria.setDescricao("askdalskdjalskdjaslkda.");
         mentoria.setData(LocalDate.now());
+
+        Conteudo cursoConteudo = new Curso(); //Polimorfismo
+        Conteudo mentoriaConteudo = new Mentoria();
 
         System.out.println(curso);
         System.out.println(mentoria);
